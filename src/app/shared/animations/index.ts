@@ -1,0 +1,1 @@
+export { fadeInOut } from './router-transition.animation';

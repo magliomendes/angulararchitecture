@@ -1,0 +1,43 @@
+@import "~assets/scss/styles.scss";
+
+.item-content {
+    background-color: $light-grey;
+    height: 3rem;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    .name {
+        height: 2rem;
+        background-color: $dark-grey;
+        width: 15%
+    }
+
+    .family {
+        height: 2rem;
+        background-color: $dark-grey;
+        width: 25%
+    }
+
+    .icons {
+        height: 2rem;
+        width: 60%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+
+        .icon {
+            width: 2rem;
+            height: 2rem;
+            border-radius: 50%;
+            background-color: $dark-grey;
+            margin: 0 1rem;
+            &:last-of-type {
+                margin-right: 0;
+            }
+        }
+    }
+}

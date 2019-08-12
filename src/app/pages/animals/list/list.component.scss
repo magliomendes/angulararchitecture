@@ -1,0 +1,24 @@
+@import "~assets/scss/styles.scss";
+
+.list-content {
+    height: 100vh;
+    min-height: 100vh;
+    max-height: 100vh;
+    border: .1rem solid $light-grey;
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+
+    .header-title {
+        height: 3.5rem;
+        background-color: $dark-grey;
+        margin: 0 auto;
+    }
+
+    .header {
+        height: 3.5rem;
+        background-color: $dark-grey;
+        margin: 2rem auto 0;
+    }
+}

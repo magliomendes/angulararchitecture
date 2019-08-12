@@ -1,0 +1,36 @@
+body {
+    -ms-overflow-style: none;
+}
+
+html {
+    min-height: calc(100vh);
+    line-height: 1.429;
+    font-size: 62.5%;
+    width: calc(100% + (100vw - 100%));
+    position: absolute;
+    overflow-x: hidden;
+    -ms-overflow-style: none;
+}
+
+@media (max-width: 768px) {
+
+    html,
+    body {
+        -ms-overflow-style: none;
+    }
+
+    ::-webkit-scrollbar {
+        width: 0px;
+        background: transparent;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: transparent;
+    }
+}
+
+.btn {
+    height: 5rem;
+    width: 12rem;
+    border-radius: 2rem;
+}
