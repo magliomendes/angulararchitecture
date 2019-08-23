@@ -1,0 +1,8 @@
+<div class="toast-container">
+    <div class="{{messageType}}" [ngClass]="{'visible':isVisible}" role="alert" [@toastFade]="visibilityState">
+        <span translate>{{message}}</span>
+        <button type="button" class="close" (click)="dismiss()" *ngIf="isVisible">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+</div>

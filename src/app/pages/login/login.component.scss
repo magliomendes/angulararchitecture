@@ -1,0 +1,22 @@
+@import "~assets/scss/styles.scss";
+
+.login-content {
+    height: 100vh;
+    position: relative;
+
+    .middle-content {
+        position: absolute;
+        background-color: $dark-grey;
+        height: 50vh;
+        width: 100vw;
+        top: 0;
+    }
+
+    .input-content {
+        position: relative;
+        height: 50vh;
+        width: 70vw;
+        background-color: #FFF;
+        box-shadow: 1px 1px 1px $light-grey;
+    }
+}

@@ -1,19 +1,27 @@
+import { AppInitializeModule } from './app-initialize.module';
+import { CoreModule } from '@shared/modules/core.module';
+import { AuthGuard } from '@shared/guards/auth.guard';
+import { RouterModule } from '@angular/router';
+import { AuthService } from '@app/shared/services/auth.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { SharedModule } from './shared/modules';
-
+import { SharedModule } from '@shared/modules';
+import { routing } from './app.routing';
+''
 @NgModule({
   declarations: [
     AppComponent
   ],
   imports: [
+    AppInitializeModule,
     BrowserModule,
-    AppRoutingModule,
+    routing,
     BrowserAnimationsModule,
-    SharedModule
+    SharedModule,
+    RouterModule,
+    CoreModule
   ],
   providers: [],
   bootstrap: [AppComponent]
